@@ -39,10 +39,25 @@
 } @else if (count < 3) {
   <h2>the button is will be hide</h2>
 } -->
-
-<div [ngSwitch]="userRoles">
+<!-- switch -->
+<!-- <div [ngSwitch]="userRoles">
   <p *ngSwitchCase="'Admin'">welcome admin </p>
   <p *ngSwitchCase="'User'">welcome user </p>
   <p *ngSwitchCase="'editor'">welcome Editor </p>
   <p *ngSwitchDefault="">No User is Founded</p>
-</div> 
+</div>  -->
+
+@switch (userRoles) {
+  @case ('Admin') {
+    <p>welecome {{userRoles}} to your page</p>
+  }
+  @case ('User') {
+    <p>welcome user to your pages</p>
+  }
+  @case ('Editor') {
+    <p>welcome editor to your page</p>
+  }
+  @default {
+    <p>the user is not founded</p>
+  }
+}
