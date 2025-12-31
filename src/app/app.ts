@@ -1,10 +1,10 @@
-import { NgIf } from '@angular/common';
+import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, ɵEmptyOutletComponent } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NgIf, ɵEmptyOutletComponent],
+  imports: [RouterOutlet, NgIf, ɵEmptyOutletComponent, NgSwitch, NgSwitchCase, NgSwitchDefault],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -23,6 +23,8 @@ export class App {
     this.count++;
     console.log("i click the button " + this.count)
   }
+
+  userRoles: string = 'Admin';
 
 
 }

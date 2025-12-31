@@ -39,3 +39,10 @@
 } @else if (count < 3) {
   <h2>the button is will be hide</h2>
 } -->
+
+<div [ngSwitch]="userRoles">
+  <p *ngSwitchCase="'Admin'">welcome admin </p>
+  <p *ngSwitchCase="'User'">welcome user </p>
+  <p *ngSwitchCase="'editor'">welcome Editor </p>
+  <p *ngSwitchDefault="">No User is Founded</p>
+</div> 
