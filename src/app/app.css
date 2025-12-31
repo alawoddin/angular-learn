@@ -1,0 +1,10 @@
+.login {
+    color: green;
+    text-transform: capitalize;
+    border: 2px solid black;
+}
+
+.logout {
+    color: red;
+    text-transform: lowercase;
+}

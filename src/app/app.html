@@ -62,4 +62,9 @@
   }
 } -->
 
-<h2 [style.color]="isColor? 'green': 'red'"  [style.textTransform]="isColor? 'uppercase': 'lowercase'">wellcome to page</h2>
+<!-- <h2 [style.color]="isColor? 'green': 'red'"  [style.textTransform]="isColor? 'uppercase': 'lowercase'">wellcome to page</h2> -->
+
+
+<!-- <h2 [class.login]="isColor" [class.logout]="!isColor">wellcome to the class</h2> -->
+
+<p [ngClass]="{'login': isColor , 'logout': isColor}">hello world</p>

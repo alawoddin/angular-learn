@@ -1,10 +1,10 @@
-import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault, NgClass } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, ɵEmptyOutletComponent } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NgIf, ɵEmptyOutletComponent, NgSwitch, NgSwitchCase, NgSwitchDefault],
+  imports: [RouterOutlet, NgIf, ɵEmptyOutletComponent, NgSwitch, NgSwitchCase, NgSwitchDefault, NgClass],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
