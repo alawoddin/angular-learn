@@ -26,5 +26,7 @@ export class App {
 
   userRoles: string = 'Admin';
 
+  isColor: boolean = true;
+
 
 }

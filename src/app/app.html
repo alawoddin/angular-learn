@@ -47,7 +47,7 @@
   <p *ngSwitchDefault="">No User is Founded</p>
 </div>  -->
 
-@switch (userRoles) {
+<!-- @switch (userRoles) {
   @case ('Admin') {
     <p>welecome {{userRoles}} to your page</p>
   }
@@ -60,4 +60,6 @@
   @default {
     <p>the user is not founded</p>
   }
-}
+} -->
+
+<h2 [style.color]="isColor? 'green': 'red'"  [style.textTransform]="isColor? 'uppercase': 'lowercase'">wellcome to page</h2>
